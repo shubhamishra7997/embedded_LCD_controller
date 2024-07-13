@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "author": "Shubham Mishra",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-mega",
+      "id": "mega",
+      "top": -59.2,
+      "left": -12.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    { "type": "wokwi-lcd1602", "id": "lcd1", "top": -159.77, "left": -272, "attrs": {} }
+  ],
+  "connections": [
+    [ "mega:A0", "lcd1:D0", "green", [ "h-275.7", "v-12.9" ] ],
+    [ "lcd1:D1", "mega:A1", "green", [ "v86.4", "h-0.3" ] ],
+    [ "lcd1:D2", "mega:A2", "green", [ "v96", "h-0.2" ] ],
+    [ "mega:A3", "lcd1:D3", "green", [ "h-246.9", "v-3.25" ] ],
+    [ "lcd1:D4", "mega:A4", "green", [ "v115.2", "h240", "v9.6" ] ],
+    [ "mega:A5", "lcd1:D5", "green", [ "h-227.7", "v-3.05" ] ],
+    [ "mega:A6", "lcd1:D6", "green", [ "h-218.1", "v-3.2" ] ],
+    [ "mega:A7", "lcd1:D7", "green", [ "h-208.5", "v-3.1" ] ],
+    [ "mega:GND.2", "lcd1:K", "black", [ "h-189.3", "v-45.85" ] ],
+    [ "mega:5V", "lcd1:A", "red", [ "h-198.9", "v2.3" ] ],
+    [ "mega:5V", "lcd1:VDD", "red", [ "h-323.7", "v-36.1" ] ],
+    [ "mega:GND.2", "lcd1:VSS", "black", [ "h-333.3", "v2.15" ] ],
+    [ "mega:5V", "lcd1:V0", "red", [ "h0" ] ],
+    [ "mega:GND.2", "lcd1:RW", "black", [ "h0" ] ],
+    [ "mega:A8", "lcd1:E", "green", [ "h-285.3", "v1.35" ] ],
+    [ "mega:A9", "lcd1:RS", "green", [ "h-304.5", "v1.2" ] ]
+  ],
+  "dependencies": {}
+}
